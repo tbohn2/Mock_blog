@@ -1,14 +1,16 @@
 [
   {
     "title": "JS is sick",
-    "comment": "JavaScript is totally awesome bruh",
+    "postDetail": "JavaScript is totally awesome bruh",
     "date_created": "5/6/23",
-    "user_id": 1
+    "user_id": 1,
+    "comment_id": 2
   },
   {
     "title": "Sequelize is the bees knees",
-    "comment": "Man, I don't even remember the syntax for MySQL2 anymore; I'm sequelizing all day!",
+    "postDetail": "Man, I don't even remember the syntax for MySQL2 anymore; I'm sequelizing all day!",
     "date_created": "5/8/23",
-    "user_id": 2
+    "user_id": 2,
+    "comment_id": 1
   }
 ]
