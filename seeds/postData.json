@@ -1,0 +1,14 @@
+[
+  {
+    "title": "JS is sick",
+    "comment": "JavaScript is totally awesome bruh",
+    "date_created": "5/6/23",
+    "user_id": 1
+  },
+  {
+    "title": "Sequelize is the bees knees",
+    "comment": "Man, I don't even remember the syntax for MySQL2 anymore; I'm sequelizing all day!",
+    "date_created": "5/8/23",
+    "user_id": 2
+  }
+]
