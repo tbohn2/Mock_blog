@@ -1,0 +1,25 @@
+.txtdark {
+    color: rgb(63, 9, 9);
+}
+
+.txtlight {
+    color: rgb(196, 213, 218);
+}
+
+.bgdark {
+    background-color: rgb(63, 9, 9);
+}
+
+.bglight {
+    background-color: rgb(196, 213, 218);
+}
+
+.borderdark {
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(63, 9, 9);
+}
+
+.bold {
+    font-weight: bold;
+}
