@@ -18,4 +18,23 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/:user_id', async (req, res) => {
+  try {
+    const postData = await Post.findAll({
+      where: { user_id: req.params.user_id },
+      include: [
+        {
+          model: User,
+          attributes: ['username'],
+        },
+      ],
+    });
+    res.json(postData)
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+
+
 module.exports = router;
