@@ -1,14 +1,3 @@
-<a class="post mt-4 d-flex flex-column justify-content-center align-items-center borderdark col-11" href="#">
-    <div class="col-12 px-3 d-flex justify-content-between align-items-center bgdark txtlight">
-        <h2 id="posttitle">Why is MVC so cool</h2>
-        <p id="postdate">Posted by izzy zYo mama on 5/8/2023</p>
-    </div>
-    <p id="postDetails" class="txtlight px-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam sint
-        quae
-        ratione
-        sit. Dolor excepturi
-        cupiditate, maiores et consequatur unde explicabo accusantium voluptatibus reprehenderit ea. Earum
-        incidunt aliquam minus eaque?</p>
-</a>
-
-<script src="/js/homepage.js"></script>
+{{#each posts as |post|}}
+{{>post}}
+{{/each}}
