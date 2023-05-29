@@ -18,7 +18,26 @@ const loginUser = async (event) => {
     }
 };
 
+const createNewUser = async (event) => {
+    event.preventDefault();
 
+    const name = document.querySelector('#newUsername').value.trim();
+    const password = document.querySelector('#newPassword').value.trim();
+
+    if (name && password) {
+        const response = await fetch('/api/users', {
+            method: 'POST',
+            body: JSON.stringify({ name, password }),
+            headers: { 'Content-Type': 'application/json' },
+        });
+
+        if (response.ok) {
+            document.location.replace('/profile');
+        } else {
+            alert(response.statusText);
+        }
+    }
+};
 
 document.querySelector('#loginbtn').addEventListener('click', loginUser);
-// document.querySelector('#signupbtn').addEventListener('click', createNewUser);
+document.querySelector('#signupbtn').addEventListener('click', createNewUser);
