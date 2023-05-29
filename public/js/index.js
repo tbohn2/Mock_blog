@@ -1,3 +1,7 @@
+function logoutUser() {
+    console.log('You are logged out');
+}
+
 function loadHome() {
     document.location.replace('/')
 }
@@ -14,12 +18,14 @@ function loadPost() {
 }
 
 
+if (document.querySelector('#navlogoutbtn')) {
+    document.querySelector('#navlogoutbtn').addEventListener('click', logoutUser);
+}
 
-
-
-
+if (document.querySelector('#navloginbtn')) {
+    document.querySelector('#navloginbtn').addEventListener('click', loadLogin);
+}
 
 document.querySelector('#homebtn').addEventListener('click', loadHome);
 document.querySelector('#dashbtn').addEventListener('click', loadDashboard);
-document.querySelector('#logbtn').addEventListener('click', loadLogin);
 document.querySelector('.post').addEventListener('click', loadPost);

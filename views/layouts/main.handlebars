@@ -16,7 +16,11 @@
         <nav class="col-9 p-2 d-flex flex-wrap align-items-center">
             <button id="homebtn" class="btn bgdark txtlight fs-5 me-1 col-2" type="button">Home</button>
             <button id="dashbtn" class="btn bgdark txtlight fs-5 me-1 col-2" type="button">Dashboard</button>
-            <button id="logbtn" class="btn bgdark txtlight fs-5 me-1 col-2" type="button">Login</button>
+            {{#if logged_in}}
+            <button id="navlogoutbtn" class="btn bgdark txtlight fs-5 me-1 col-2" type="button">Logout</button>
+            {{else}}
+            <button id="navloginbtn" class="btn bgdark txtlight fs-5 me-1 col-2" type="button">Login</button>
+            {{/if}}
         </nav>
 
 
